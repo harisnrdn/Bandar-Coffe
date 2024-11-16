@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANDAR COFFE</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Reset dasar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: #007BFF;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav {
+            background: #333;
+            color: #fff;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 0.5rem;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 30px;
+            margin: auto;
+            padding: 1rem;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .content .card {
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            padding: 1rem;
+            flex: 1 1 calc(33.333% - 2rem);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 44px;
+        }
+
+        /* Responsif */
+        @media (max-width: 30px) {
+            .content .card {
+                flex: 1 1 calc(50% - 2rem);
+            }
+        }
+
+        @media (max-width: 30px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .content .card {
+                flex: 1 1 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Coffe BANDAR</h1>
+        <p>This is my website</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section class="content">
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1629561585871-41a27c86e825?q=80&w=1227&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gambar Card 1" class="card-image">
+                <h2>MENU 1</h2>
+                <b>
+                <p>AMERICANO COFFE.</p>
+                </b>
+            </div>
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1623086923609-594e98bb0bff?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gambar Card 2" class="card-image">
+                <h2>MENU 2</h2>
+                <b>
+                <p>COFFE LATTE.</p>
+                </b>
+            </div>
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="https://plus.unsplash.com/premium_photo-1681284939219-acfc2faa7eb8?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gambar Card 3" class="card-image">
+                <h2>MENU 3</h2>
+                <b>
+                <p>AIR MINERAL.</p>
+                </b>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Website Statis. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
